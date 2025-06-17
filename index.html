@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/images/eh-code-logo.png">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-gray-900 z-50 shadow-lg">
+        <nav class="container px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center text-2xl font-bold">
+                <!-- <img src="assets/images/eh-code-logo-transparent.png" class="h-12" alt=""> -->
+                <span class="text-blue-500">EH</span>Code
+            </div>
+            <div class="hidden md:flex space-x-8 mr-10">
+                <a href="#home" class="hover:text-blue-500 transition">Home</a>
+                <a href="#about" class="hover:text-blue-500 transition">About</a>
+                <a href="#services" class="hover:text-blue-500 transition">Services</a>
+                <a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-btn">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-gray-800 w-full py-4 px-6" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="hover:text-blue-500 transition">Home</a>
+                <a href="#about" class="hover:text-blue-500 transition">About</a>
+                <a href="#services" class="hover:text-blue-500 transition">Services</a>
+                <a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">     
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Hi, I'm <span class="text-blue-500">Hundeyin Emmanuel</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+                    A <span class="text-blue-500" id="typing-text"></span><span class="text-blue-500 typing-cursor">|</span>
+                </h2>
+                <p class="text-gray-400 mb-8 max-w-lg">
+                    I’m a passionate fullstack developer with a focus on creating dynamic and beautiful web applications. I love coding and bringing ideas to life through technology.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+                        Contact Me
+                    </a>
+                    <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg transition">
+                        Download CV
+                    </a>
+                </div>
+                <div class="mt-8 flex space-x-4">
+                    <a href="https://github.com/Emminice" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emmanuel-hundeyin-7425002b4/" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://x.com/_hackerdave" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                    <div class="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-xl"></div>
+                    <img src="assets/images/eh-code-logo.png" alt="Profile" class="relative w-full h-full object-cover rounded-full border-4 border-blue-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800 opacity-80">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                About <span class="text-blue-500">Me</span>
+            </h2>
+            <div class="flex max-w-7xl mx-auto space-x-4 mb-12">
+                <div class="max-w-3xl">   
+                    <p class="text-gray-400 text-left mb-2">
+                        I'm a passionate and versatile developer with expertise across multiple domains of technology. As the founder of <span class="text-white font-bold">EH Code</span>, I thrive on creating innovative solutions and pushing the boundaries of what's possible in software development.
+                    </p>
+        
+                    <p class="text-gray-400 text-left mb-2">
+                        With skills in <span class="text-white font-bold">Full Stack Development (PHP, JavaScript, Python), Web & Mobile App Development,</span> and <span class="text-white font-bold"> Game Development (Unity, Unreal Engine)</span>, I bring a well-rounded approach to every project. My experience extends to <span class="text-white font-bold">AI, Database Management, and DevOps</span>, ensuring robust and scalable systems.
+                    </p>
+                </div>
+                <div class="max-w-3xl">
+                    <p class="text-gray-400 text-left mb-2">
+                        I love turning ideas into reality through clean, efficient code and intuitive design. Whether it's building responsive websites, crafting mobile apps, or engineering AI-driven solutions, I'm always eager to take on new challenges and deliver exceptional results.
+                    </p>
+                    <p class="text-gray-400 text-left mb-2">
+                        When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or mentoring aspiring developers. I believe in the power of collaboration and continuous learning to drive innovation.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative w-64 h-64">
+                        <div class="absolute inset-0 bg-blue-500 rounded-lg opacity-20 blur-xl"></div>
+                        <img src="assets/images/eh-code-logo.png" alt="About" class="relative w-full h-full object-cover rounded-lg border-2 border-blue-500">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">
+                        Personal Information
+                    </h3>
+                    <p class="text-gray-400 mb-6">
+                        See more information about me, my contact info, and how I can help you with your projects.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="text-gray-400"><span class="text-white font-medium">Name:</span>Hundeyin Emmanuel</p>
+                            <p class="text-gray-400"><span class="text-white font-medium">Age:</span> 23</p>
+                            <p class="text-gray-400"><span class="text-white font-medium">Email:</span> emmanuelhundeyin8@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400"><span class="text-white font-medium">From:</span> Lagos, Nigeria</p>
+                            <p class="text-gray-400"><span class="text-white font-medium">Current City:</span> Abuja - FCT, Nigeria</p>
+                            <p class="text-gray-400"><span class="text-white font-medium">Freelance:</span> Available</p>
+                            <p class="text-gray-400"><span class="text-white font-medium">Phone:</span> +234 708 499 2402, +234 903 385 7471</p>
+                            <!-- <p class="text-gray-400 ml-14">+234 708 499 2402</p> -->
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">
+                            Contact Me
+                        </a>
+                        <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded-lg transition">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                My <span class="text-blue-500">Services</span>
+            </h2>
+            <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+                Here’s a breakdown of the technical services I offer, along with the technologies I specialize in. 
+            </p>
+            
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-code h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">Web Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">HTML</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">CSS</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">JavaScript</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Python</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">PHP</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Laravel</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">React.Js</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Next.Js</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">WordPress</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">Mobile App Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Flutter</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">React Native</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Native PHP</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Kotlin (Android)</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Swift (iOS)</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <!-- <img src="assets/images/game-icon.png" class="h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full" alt=""> -->
+                        <i class="fas fa-cubes h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">Game Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Unity</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Unreal Engine</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">C#</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">C++</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-microchip h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">AI & Machine Learning</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">TensorFlow</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">PyTorch</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">SciKit-learn</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">NPL & Computer Vision</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-paint-brush h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">UI/UX & Responsive Design</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Figma</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Adobe XD</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Bootstrap</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-database h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">Database and Backend Solutions</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">MySQL</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">PostgreSQL</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">MongoDB</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Firebase</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">REST</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">GraphQL</span>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-gear h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">DevOps & Cloud Engineering</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Github Actions</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Jenkins</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Docker</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Kubernetes</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">AWS</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Google Cloud</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Azure</span>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="bg-gray-800/50 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex items-center text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-terminal h-14 w-14 bg-gray-700/50 p-2 text-center rounded-full"></i>
+                        <h3 class="text-xl text-white font-semibold ml-4 mb-2">Other Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Problem Solving</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Algorithmic Thinking</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Competitive Programming</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Data Analysis</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Microsoft Office</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">CorelDraw/ PhotoShop</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Communication</span>
+                        <span class="py-1 px-3 font-semibold bg-gray-700/50 text-gray-200 text-sm rounded-full">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                My <span class="text-blue-500">Portfolio</span>
+            </h2>
+            <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+                Welcome to my digital showcase! Here, you'll find a collection of my projects, skills, and professional journey.
+            </p>
+            
+            <div class="flex justify-center mb-8">
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 bg-blue-500 text-white rounded-lg filter-btn active" data-filter="all">All</button>
+                    <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-blue-500 transition filter-btn" data-filter="web">Web</button>
+                    <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-blue-500 transition filter-btn" data-filter="app">App</button>
+                    <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-blue-500 transition filter-btn" data-filter="design">Design</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 portfolio-container">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-gray-900 rounded-lg overflow-hidden" data-category="design">
+                    <div class="relative group">
+                        <img src="assets/images/portfolio/school-portal.png" alt="Project 1" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">Hundeyin Institute</h3>
+                                <p class="mb-4">Welcome to Hundeyin Institute – Your Gateway to Academic Excellence!</p>
+                                <a href="#" class="bg-white text-blue-500 px-4 py-2 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">School Portal</h3>
+                        <p class="text-gray-400">Unlock Your Potential, Shape Your Future!</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-gray-900 rounded-lg overflow-hidden" data-category="web">
+                    <div class="relative group">
+                        <img src="assets/images/portfolio/school.png" alt="Project 2" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">Tutomile</h3>
+                                <p class="mb-4">Explore a wide range of professional and personal development courses. Gain the skills you need to succeed in your career and thrive in life. Start learning today!</p>
+                                <a href="https://tutomile.webflow.io/" class="bg-white text-blue-500 px-4 py-2 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Educational Site</h3>
+                        <p class="text-gray-400">Upgrade your skills, elevate your life</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-gray-900 rounded-lg overflow-hidden" data-category="app">
+                    <div class="relative group">
+                        <img src="assets/images/portfolio/blog.png" alt="Project 3" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">Blog and Resources</h3>
+                                <p class="mb-4">Learn strategies to keep your blog updated regularly without sacrificing quality.</p>
+                                <a href="https://blogpod.webflow.io/" class="bg-white text-blue-500 px-4 py-2 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Blog Site</h3>
+                        <p class="text-gray-400">How to Maintain a Consistent Blogging Schedule</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item bg-gray-900 rounded-lg overflow-hidden" data-category="web">
+                    <div class="relative group">
+                        <img src="assets/images/portfolio/real-estate.png" alt="Project 4" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">Realtyr</h3>
+                                <p class="mb-4">Realtyr connects you with exclusive real estate opportunities, offering a seamless way to explore, and invest in properties that match your goals.</p>
+                                <a href="https://realtyr-template.webflow.io/" class="bg-white text-blue-500 px-4 py-2 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Real-Estate Site</h3>
+                        <p class="text-gray-400">Realtyr connects you to best real estate opportunities</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item bg-gray-900 rounded-lg overflow-hidden" data-category="design">
+                    <div class="relative group">
+                        <img src="assets/images/portfolio/skincare.png" alt="Project 5" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">Cairo</h3>
+                                <p class="mb-4">Presenting Cairo, the ultimate E-commerce Website</p>
+                                <a href="https://az-cairo.webflow.io/" class="bg-white text-blue-500 px-4 py-2 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Skincare Site</h3>
+                        <p class="text-gray-400">Presenting Cairo, the ultimate E-commerce Website</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item bg-gray-900 rounded-lg overflow-hidden" data-category="app">
+                    <div class="relative group">
+                        <img src="assets/images/portfolio/mobile-app.png" alt="Project 6" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">Mobit</h3>
+                                <p class="mb-4">Fastest way to manage payment anytime you want.</p>
+                                <a href="https://mobitapp.webflow.io/" class="bg-white text-blue-500 px-4 py-2 rounded-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Mobile App</h3>
+                        <p class="text-gray-400">Fastest way to manage payment anytime you want.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                Contact <span class="text-blue-500">Me</span>
+            </h2>
+            <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+                Got a project in mind or need expert tech solutions? Let’s connect!. I’d love to discuss how we can bring your ideas to life.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-blue-500 text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-400">23 Mbano Street, FHA Kubwa - Abuja, FCT Nigeria.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-500 text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-400">emmanuelhundeyin8@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-500 text-xl mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-400">+234 708 4992 402, +234 903 3857 471</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://web.facebook.com/jace.norman.37266136" class="bg-gray-800 w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-500 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/_hackerdave" class="bg-gray-800 w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/emminice4u/" class="bg-gray-800 w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-500 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/emmanuel-hundeyin-7425002b4/" class="bg-gray-800 w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-500 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Emminice" class="bg-gray-800 w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-500 transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                &copy; 2024 <span class="text-blue-500">EH Code</span>. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
