@@ -324,12 +324,6 @@ typingText.addEventListener('mouseleave', () => {
 
 
 
-
-
-
-
-
-
 // Download CV Functionality
 // This function will be called when the download button is clicked
 function downloadCV() {
@@ -346,3 +340,89 @@ function downloadCV() {
     // Optional: Track downloads with analytics
     console.log('CV downloaded');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const btn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const spinner = document.getElementById('spinner');
+    
+    // Validate form
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    
+    if (!name || !email || !subject || !message) {
+        alert('Please fill all fields');
+        return;
+    }
+    
+    // Email validation
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    // Show loading state
+    btn.disabled = true;
+    btnText.textContent = 'Preparing...';
+    spinner.classList.remove('hidden');
+    
+    // Format message
+    const fullMessage = `📨 New Message From Portfolio Website
+    
+*Name:* ${name}
+*Email:* ${email}
+*Subject:* ${subject}
+
+*Message:*
+${message}
+
+---`;
+    
+    // Encode for URL
+    const encodedMessage = encodeURIComponent(fullMessage);
+    
+    // Your WhatsApp number (with country code but no + or 0)
+    const whatsappNumber = "2349033857471"; // REPLACE WITH YOUR NUMBER
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Simulate processing delay (remove in production)
+    setTimeout(() => {
+        // Open WhatsApp
+        window.open(whatsappUrl, '_blank');
+        
+        // Reset button
+        btn.disabled = false;
+        btnText.textContent = 'Send to WhatsApp';
+        spinner.classList.add('hidden');
+        
+        // Optional: Reset form
+        // this.reset();
+    }, 1000);
+});

@@ -149,7 +149,7 @@
                         <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">
                             Contact Me
                         </a>
-                        <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded-lg transition">
+                        <a href="assets/documents/emmanuelhundeyin_cv.pdf" download="EmmanuelHundeyin_CV.pdf" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded-lg transition">
                             Download CV
                         </a>
                     </div>
@@ -499,23 +499,31 @@
                 
                 <div class="md:w-1/2">
                     <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
-                    <form class="space-y-4">
+                    <form class="space-y-4" id="whatsapp-form">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <input type="text" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                                <input type="text" id="name" placeholder="Your Name" required
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
                             </div>
                             <div>
-                                <input type="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                                <input type="email" id="email" placeholder="Your Email" required
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
                             </div>
                         </div>
                         <div>
-                            <input type="text" placeholder="Subject" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
+                            <input type="text" id="subject" placeholder="Subject" required
+                                class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500">
                         </div>
                         <div>
-                            <textarea placeholder="Your Message" rows="5" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"></textarea>
+                            <textarea id="message" placeholder="Your Message" rows="5" required
+                                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"></textarea>
                         </div>
-                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
-                            Send Message
+                        <button type="submit" id="submit-btn" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition flex items-center justify-center">
+                            <span id="btn-text">Send to WhatsApp</span>
+                            <svg id="spinner" class="hidden animate-spin -mr-1 ml-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
                         </button>
                     </form>
                 </div>
