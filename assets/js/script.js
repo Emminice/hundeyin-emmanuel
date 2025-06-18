@@ -308,3 +308,41 @@ typingText.addEventListener('mouseenter', () => {
 typingText.addEventListener('mouseleave', () => {
     typingCursor.style.animation = 'blink 1s infinite';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Download CV Functionality
+// This function will be called when the download button is clicked
+function downloadCV() {
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = 'assets/documents/yourname_cv.pdf';
+    link.download = 'YourName_CV.pdf'; // The filename that will be saved
+    
+    // Append to body, click it, then remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Optional: Track downloads with analytics
+    console.log('CV downloaded');
+}
